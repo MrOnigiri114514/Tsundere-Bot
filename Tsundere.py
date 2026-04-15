@@ -130,7 +130,7 @@ async def on_message(message):
 
     try:
         response = client_ai.chat.completions.create(
-            model="gpt-4o-mini",
+            model="openai/gpt-oss-120b",
             messages=[
                 {"role": "system", "content": system_prompt},
                 *memory[user_id]
