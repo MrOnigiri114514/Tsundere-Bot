@@ -130,7 +130,7 @@ async def on_message(message):
 
     try:
         response = client_ai.chat.completions.create(
-            model="llama3-70b-8192",
+            model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": system_prompt},
                 *memory[user_id]
